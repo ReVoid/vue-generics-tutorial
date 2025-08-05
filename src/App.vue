@@ -1,11 +1,12 @@
-<script setup lang="ts"></script>
-
+<script setup lang="ts">
+import { Primitive, Complex } from '@/stories';
+</script>
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <section>
+    <Primitive />
+  </section>
+  <section>
+    <Complex />
+  </section>
 </template>
 
-<style scoped></style>
