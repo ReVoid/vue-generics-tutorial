@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 import {
   SelectableList,
-} from '@/components/SelectableList';
+} from '@/components';
 
 type Person = {
   firstName: string;
