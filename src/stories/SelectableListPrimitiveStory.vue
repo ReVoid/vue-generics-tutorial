@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import {
-  SelectableList,
-} from '@/components';
+import { SelectableList } from '@/components';
 
 const items = [1, 2, 3];
 
