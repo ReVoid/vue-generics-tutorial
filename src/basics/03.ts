@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 function whatever<T>(arg: T): T {
   return arg;
 }
