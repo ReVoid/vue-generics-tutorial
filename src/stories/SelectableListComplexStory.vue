@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import {
-  SelectableList,
-} from '@/components';
+import { SelectableList } from '@/components';
+
 
 type Person = {
   firstName: string;

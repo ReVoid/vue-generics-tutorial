@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ISelectableListItem } from './index.ts'
+import { type ISelectableListItem } from './index.ts';
 
 const props = withDefaults(defineProps<ISelectableListItem['Props']>(), {
   title: '',
@@ -8,11 +8,10 @@ const props = withDefaults(defineProps<ISelectableListItem['Props']>(), {
 </script>
 
 <template>
-  <button :class="[
-    'selectable-list-item',
-    { 'selectable-list-item--selected': props.selected },
-  ]">
-    <!-- Slot "Default" -->
+  <button
+    class="selectable-list-item"
+    :class="{ 'selectable-list-item--selected': props.selected }"
+  >
     <slot name="default">
       {{ props.title }}
     </slot>

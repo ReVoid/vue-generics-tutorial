@@ -1,11 +1,9 @@
 <script setup lang="ts" generic="T, R">
-import {
-  SelectableListItem,
-  type ISelectableList,
-} from './index';
+import { SelectableListItem, type ISelectableList } from './index';
 
 import { isEqual } from 'lodash';
 import { isString, isNumber, isObject, isFunction } from '@sniptt/guards';
+
 
 type Types = ISelectableList<T, R>;
 

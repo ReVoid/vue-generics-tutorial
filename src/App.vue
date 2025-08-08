@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { Primitive, Complex, AppInputStory, AppInputNonGenericStory } from '@/stories';
+import { SelectableListPrimitiveStory, SelectableListComplexStory, AppInputStory, AppInputNonGenericStory } from '@/stories';
 </script>
 
 
 <template>
   <section>
-    <Primitive />
+    <SelectableListPrimitiveStory />
   </section>
 
   <section>
-    <Complex />
+    <SelectableListComplexStory />
   </section>
 
   <section>

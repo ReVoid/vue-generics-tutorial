@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import AppInput from '@/components/AppInput/AppInput.vue'
+import { AppInput } from '@/components'
+
 
 const output = ref<string>();
 
-// ✅ The type has been narrowed down correctly.
-function onChange(payload: string): boolean {
-  return payload.startsWith('x');
+// ✅ The type has been narrowed down correctly
+function onChange(payload: string | undefined): boolean {
+  return payload ? payload.startsWith('x') : false;
 }
 </script>
 
