@@ -1,14 +1,23 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-function whatever<T>(arg: T): T {
-  return arg;
-}
+type Car = { model: string; speed: number };
+type Person = { firstName: string, lastName: string };
 
-// Let's try to pass a generic argument
-const x: string = whatever<string>('');
+// Solution ✅
+type SelectableList<T> = {
+  items: T[];
+  select: T;
+};
 
-// What if we don't have a possibility to pass a generic argument?
-const y: number = whatever(2077); // ✅ It works!
+// No duplications anymore 👍
+type Cars = SelectableList<Car>;
+type People = SelectableList<Person>;
 
-// Resume
-// That's how Vue components find out what type of data they are working with
+const cars: SelectableList<Car> = undefined as unknown as SelectableList<Car>;  // The implementation doesn't matter.
+const people: SelectableList<Person> = undefined as unknown as SelectableList<Person>;  // The implementation doesn't matter.
+
+const car = cars.select;
+const person = people.select;
+
+const speed: number = car.speed;
+const firstName: string = person.firstName;
