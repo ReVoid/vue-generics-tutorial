@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { SelectableListPrimitiveStory, SelectableListComplexStory, AppInputStory, AppInputNonGenericStory } from '@/stories';
+import {
+  SelectableListPrimitiveStory,
+  SelectableListComplexStory,
+  SelectableListSlotsStory,
+  AppInputStory,
+  AppInputNonGenericStory,
+} from '@/stories'
 </script>
-
 
 <template>
   <section>
@@ -13,6 +18,10 @@ import { SelectableListPrimitiveStory, SelectableListComplexStory, AppInputStory
   </section>
 
   <section>
+    <SelectableListSlotsStory />
+  </section>
+
+  <section>
     <AppInputStory />
   </section>
 
@@ -20,4 +29,3 @@ import { SelectableListPrimitiveStory, SelectableListComplexStory, AppInputStory
     <AppInputNonGenericStory />
   </section>
 </template>
-
